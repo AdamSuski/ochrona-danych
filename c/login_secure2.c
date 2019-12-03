@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(int argc, char** argv) {	
+	int zalogowany;
+	char haslo[32];
+	zalogowany = 0;
+	strcpy(haslo, argv[1]);
+	if (strcmp(haslo, "Tajne") == 0)
+		printf("TAK\n");
+	else
+		printf("NIE\n");
+	return 0;
+}
